@@ -9,6 +9,7 @@ import java.awt.event.FocusEvent;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
+import java.util.Random;
 
 
 public class GUI extends JFrame {
@@ -20,7 +21,7 @@ public class GUI extends JFrame {
     int predDataFlag = 0;
 
     public GUI() {
-        setTitle("KNN Machine Learning Algorithm in JAVA vs Python");
+        setTitle("KNN Machine Learning Algorithm in JAVA");
         setSize(450, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -32,7 +33,7 @@ public class GUI extends JFrame {
 
 
         // title
-        JLabel titleLabel = new JLabel("KNN Machine Learning Algorithm in JAVA vs Python", SwingConstants.CENTER);
+        JLabel titleLabel = new JLabel("KNN Machine Learning Algorithm in JAVA", SwingConstants.CENTER);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 16));
 
         titleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -166,10 +167,8 @@ public class GUI extends JFrame {
 
 
         JLabel resultLabel = new JLabel("Prediction Result: Result here");
-        JLabel pythonLabel = new JLabel("Python Runtime: Python runtime here");
         JLabel javaLabel = new JLabel("Java Runtime: Java runtime here");
         resultPanel.add(resultLabel);
-        resultPanel.add(pythonLabel);
         resultPanel.add(javaLabel);
 
         //run button
